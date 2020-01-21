@@ -20,7 +20,7 @@ class MainViewModel: ViewModel() {
                 }
             ))).create(SampleService::class.java).getData("https://api.plos.org/search?q=title:DNA")
 
-            Log.d(MainViewModel::class.java.simpleName, "response: \n\n\n $response")
+            Log.d(MainViewModel::class.java.simpleName, "\n\nresponse: $response")
         }
     }
 }
