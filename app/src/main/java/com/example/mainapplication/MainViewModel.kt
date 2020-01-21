@@ -18,7 +18,7 @@ class MainViewModel: ViewModel() {
                         return mapOf()
                     }
                 }
-            ))).create(SampleService::class.java).getData("http://api.plos.org/search?q=title:DNA")
+            ))).create(SampleService::class.java).getData("https://api.plos.org/search?q=title:DNA")
 
             Log.d(MainViewModel::class.java.simpleName, "response: \n\n\n $response")
         }
